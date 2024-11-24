@@ -40,7 +40,8 @@ public:
             }
         }
 
-        return false;      }
+        return false;  // If no valid path is found
+    }
 };
 
 int main() {
@@ -52,7 +53,7 @@ int main() {
     // Edges of the graph
     vector<vector<int>> edges = {{0, 1}, {1, 2}, {2, 3}, {3, 4}, {4, 5}};
 
-    int source = 0;
+     int source = 0;
     int destination = 5;
 
     // Call the validPath function
